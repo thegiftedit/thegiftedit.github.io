@@ -29,50 +29,6 @@ footer{border-top:1px solid var(--line);padding:24px 0 40px;color:var(--muted);f
 @media (prefers-color-scheme:dark){:root{--bg:#141a14;--card:#1c231b;--ink:#ecebe3;--muted:#b4baac;--green:#3d7a4c;--green-d:#33683f;--accent:#e8935a;--line:#2d372b}
 header.top a{color:#8cc79a}.img{border-bottom-color:#e8e4da}}
 
-/* festive */
-:root{--red:#b3262e;--red-d:#8f1d24;--gold:#d9a441}
-.cane{height:8px;background:repeating-linear-gradient(135deg,#b3262e 0 12px,#fff 12px 24px,#2f6b3d 24px 36px,#fff 36px 48px)}
-header.top{border-bottom:0}
-.lights{height:34px;position:relative;overflow:hidden;background:
-radial-gradient(circle at 20px 18px,#e5484d 0 5px,transparent 6px),
-radial-gradient(circle at 60px 22px,#f2c14e 0 5px,transparent 6px),
-radial-gradient(circle at 100px 18px,#3fa564 0 5px,transparent 6px),
-radial-gradient(circle at 140px 22px,#4f8ff0 0 5px,transparent 6px);
-background-size:160px 34px;background-repeat:repeat-x;animation:twinkle 3.2s ease-in-out infinite}
-.lights::before{content:"";position:absolute;left:0;right:0;top:8px;height:2px;background:#3a4a38;opacity:.55}
-@keyframes twinkle{0%,100%{opacity:1}50%{opacity:.72}}
-.hero{position:relative;padding:44px 0 40px;background:
-radial-gradient(circle at 12% 30%,rgba(255,255,255,.9) 0 2px,transparent 3px),
-radial-gradient(circle at 28% 34%,rgba(255,255,255,.8) 0 3px,transparent 4px),
-radial-gradient(circle at 44% 18%,rgba(255,255,255,.9) 0 2px,transparent 3px),
-radial-gradient(circle at 63% 30%,rgba(255,255,255,.85) 0 2px,transparent 3px),
-radial-gradient(circle at 78% 24%,rgba(255,255,255,.9) 0 3px,transparent 4px),
-radial-gradient(circle at 90% 36%,rgba(255,255,255,.8) 0 2px,transparent 3px)}
-.hero .kicker{color:var(--red);margin:0 auto 10px}
-.hero h1{color:var(--green-d)}
-.hero h1::after{content:"";display:block;width:90px;height:3px;margin:16px auto 0;background:linear-gradient(90deg,var(--red),var(--gold),var(--green));border-radius:3px}
-.card{border-top:4px solid var(--red);box-shadow:0 2px 10px rgba(60,30,20,.06)}
-.card:nth-child(3n+2){border-top-color:var(--green)}
-.card:nth-child(3n){border-top-color:var(--gold)}
-.tag{color:var(--red)}
-.btn{background:var(--red)}.btn:hover{background:var(--red-d)}
-footer{position:relative;border-top:0;padding-top:34px}
-footer::before{content:"";position:absolute;left:0;right:0;top:0;height:8px;background:repeating-linear-gradient(135deg,#b3262e 0 12px,#fff 12px 24px,#2f6b3d 24px 36px,#fff 36px 48px)}
-.greet{font-family:Fraunces,Georgia,serif;font-size:20px;color:var(--green-d);margin:0 0 8px}
-@media (prefers-color-scheme:dark){
-:root{--red:#d24a52;--red-d:#b43840;--gold:#e8bd5f}
-.hero h1{color:#f1efe6}.hero .kicker{color:#f08a8f}.tag{color:#f08a8f}
-.card{border-top-color:var(--red);box-shadow:0 2px 14px rgba(0,0,0,.35)}.card:nth-child(3n+2){border-top-color:#4f9a62}.card:nth-child(3n){border-top-color:var(--gold)}
-.lights::before{background:#8a9a86}
-.greet{color:#cfe3d2}
-.hero{background:
-radial-gradient(circle at 12% 30%,rgba(255,255,255,.35) 0 2px,transparent 3px),
-radial-gradient(circle at 28% 34%,rgba(255,255,255,.3) 0 3px,transparent 4px),
-radial-gradient(circle at 44% 18%,rgba(255,255,255,.35) 0 2px,transparent 3px),
-radial-gradient(circle at 63% 30%,rgba(255,255,255,.3) 0 2px,transparent 3px),
-radial-gradient(circle at 78% 24%,rgba(255,255,255,.35) 0 3px,transparent 4px),
-radial-gradient(circle at 90% 36%,rgba(255,255,255,.3) 0 2px,transparent 3px)}}
-@media (prefers-reduced-motion:reduce){.lights{animation:none}}
 </style><!-- Pinterest Tag -->
 <script>
 !function(e){if(!window.pintrk){window.pintrk=function(){window.pintrk.queue.push(Array.prototype.slice.call(arguments))};var n=window.pintrk;n.queue=[],n.version="3.0";var t=document.createElement("script");t.async=!0,t.src=e;var r=document.getElementsByTagName("script")[0];r.parentNode.insertBefore(t,r)}}("https://s.pinimg.com/ct/core.js");
@@ -85,12 +41,10 @@ pintrk('page');
 <!-- end Pinterest Tag -->
 </head>
 <body>
-<div class="cane"></div>
 <header class="top"><div class="wrap"><a href="/">The Gift Edit</a></div></header>
-<div class="lights" aria-hidden="true"></div>
 <main class="wrap">
   <section class="hero">
-    <p class="kicker">❄ Christmas Gift Guide ❄</p>
+    <p class="kicker">Gift Guide</p>
     <h1>Tech Gifts &amp; Desk Essentials</h1>
     <p>Nine useful gadgets for the desk, the TV and everyday life, from earbuds and trackers to the cable clips that tidy it all up.</p>
   </section>
@@ -178,5 +132,5 @@ pintrk('page');
   </article>
   </section>
 </main>
-<footer><div class="wrap"><p class="greet">Happy gifting from The Gift Edit</p>As an Amazon Associate I earn from qualifying purchases.</div></footer>
+<footer><div class="wrap">As an Amazon Associate I earn from qualifying purchases.</div></footer>
 </body></html>
